@@ -6,13 +6,12 @@
 		<script src="assets/javascript/task2.js"></script>
 		<script src="assets/javascript/task3.js"></script>
 		<script src="assets/javascript/task4.js"></script>
-		<script src="assets/javascript/task5.js"></script>
 		
 	</head>
 	<body>
 		<div class="header">
 			<div class="container">
-				<h1 class="header-heading">Put Student Names Here</h1>
+				<h1 class="header-heading">Name; Aalyiah Gallagher</h1>
 			</div>
 		</div>
 		<div class="nav-bar">
@@ -61,13 +60,15 @@
 					<hr>
 
 					<h3>Task 1 - The Image</h3>
-					<img onClick = "functionName()" src="assets/img/compIcon.png" id="imageTask1"><br />
-					<button style="display:none" id="buttonTask1">Click Me</button>
+					<img onmouseover = "showbutton()" src="assets/img/compIcon.png" id="imageTask1"><br />
+					<button style="display:none" onClick = "byeimage()" id="buttonTask1">Click Me</button>
 					<hr>
 										
 					<h3>Task 2 - The Table</h3>
 					<!-- Buttons for this task should be entered before the table tag. -->
-					
+					<button onClick = "makePink()" id="pinkButton">Mark O.</button>
+					<button onClick = "makeCFBlue()" id="CFBlueButton">Jacob T.</button>
+					<button onClick = "makeSGreen()" id="SGreenButton">Larry C.</button>
 					
 					<table class="table table-striped">
 						<thead>
@@ -79,19 +80,19 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
+							<tr id="pinkRow">
 								<th scope="row">1</th>
 								<td>Mark</td>
 								<td>Otto</td>
 								<td>001</td>
 							</tr>
-							<tr>
+							<tr id="CFBlueRow">
 								<th scope="row">2</th>
 								<td>Jacob</td>
 								<td>Thornton</td>
 								<td>002</td>
 							</tr>
-							<tr>
+							<tr id="SGreenRow">
 								<th scope="row">3</th>
 								<td>Larry</td>
 								<td>Cable Guy</td>
