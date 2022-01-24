@@ -25,7 +25,9 @@
 					<li><a href="#">Nav Link 6</a></li>
 					<li><a href="#">Nav Link 7</a></li>
 					<!-- Button for Task 3 should be placed here -->
-					
+					<li><button onClick = "changetext()">Click Me Bro</button></li>
+					<!-- button for task 4 below-->
+					<li><a href="newPage.html">clear</a></li>
 				</ul>
 			</div>
 		</div>
@@ -37,7 +39,9 @@
 
 					<!-- Paragraphs -->
 					<h3>Basic Directions</h3>
-					<p>This project is meant to assess your understanding of Javascript usage within a webpage.  There are five tasks that you must complete.  The tasks are functionality that will be added to this page.  Inside of the folder you found this html file, you will see a folder called "assets".  Within that, another folder called "javascript" has 5 files labeled task1.js to task5.js.  For each task, place your javascript code within the appropriate file.  The files are already linked to this page in the <b>head</b> of this document.  The instructions for each task are listed below.</p>
+					<p id = "BDText">This project is meant to assess your understanding of Javascript usage within a webpage.  There are five tasks that you must complete.  The tasks are functionality that will be added to this page.  Inside of the folder you found this html file, you will see a folder called "assets".  Within that, another folder called "javascript" has 5 files labeled task1.js to task5.js.  For each task, place your javascript code within the appropriate file.  The files are already linked to this page in the <b>head</b> of this document.  The instructions for each task are listed below.</p>
+					<!-- task 3 text -->
+					<p id="BDNewText" style="display:none">I Clicked it!</p>
 					<hr>
 
 					<h3>Tasks</h3>
@@ -60,7 +64,9 @@
 					<hr>
 
 					<h3>Task 1 - The Image</h3>
+					<!-- show button for task1 -->
 					<img onmouseover = "showbutton()" src="assets/img/compIcon.png" id="imageTask1"><br />
+					<!-- make image disappear for task 1-->
 					<button style="display:none" onClick = "byeimage()" id="buttonTask1">Click Me</button>
 					<hr>
 										
